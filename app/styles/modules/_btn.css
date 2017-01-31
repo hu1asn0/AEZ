@@ -1,0 +1,9 @@
+.btn {
+background-color: $mainBG1;
+font-weight: 900;
+font-size: .8rem;
+
+&:hover{
+	border-bottom: solid 3px #afafaf;
+}
+}

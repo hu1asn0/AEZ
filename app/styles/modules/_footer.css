@@ -1,0 +1,14 @@
+.footer{
+width: 100%;
+background-color:  $footerBG;
+height: 40px;
+text-align: center;
+margin: 0 auto;
+
+&__text{
+	font-weight: 200;
+	color: $mainBG4;
+
+}
+}
+
