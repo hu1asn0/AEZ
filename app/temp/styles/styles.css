@@ -7,8 +7,87 @@ background-color: #f0e0c0;
 .row{
 
 }
-/*font-family: 'Exo 2', sans-serif;
-font-family: 'Oswald', sans-serif;*/
+.header{
+padding: 0;
+margin: 0;
+border-bottom: solid 1px #80c0e0;
+box-sizing: border-box;
+width: 100%;
+}
+.header ul{
+float: right;
+list-style-type: none;
+padding: 0;
+margin: 0;
+font-size: 0;
+}
+.header ul li {
+width: auto;
+font-size: 1rem;
+display: inline-block;
+position: relative;
+padding: 5px 15px;
+}
+.header ul li:hover{
+background-color: #a0c040;
+color: #f0f0f0;
+cursor: pointer;
+-webkit-transition: background-color 0.2s ease-out;
+transition: background-color 0.2s ease-out;
+}
+.header ul li ul {
+display: none;
+}
+.header ul li:hover ul {
+display: block;
+position: absolute;
+top: 1.8rem;
+left: 0rem;
+z-index: 1;
+font-size: .75rem;
+}
+.header ul li:hover ul li{
+width: 210px;
+display: block;
+position: relative;
+padding: 5px 3px 5px 10px;
+margin: 5px 0;
+background-color: #80c0e0;
+border-radius: 5px;
+}
+.header ul li ul li:hover{
+background-color: #f0f0f0;
+color: #a0c040;
+border-radius: 5px;
+-webkit-transform: scaleX(1.02);
+        transform: scaleX(1.02);
+}
+.header ul li ul li span{
+float: right;
+font-size: .8rem;
+font-weight: 200;
+margin-top: 0;
+padding: 0 5px;
+background-color: #80c0e0;
+border: solid 2px #80c0e0;
+border-radius: 5px;
+}
+.main-image {
+background: #eee;
+display: block;
+padding-top: 33%;
+position: relative;
+width: 100%;
+box-shadow: 0 4px 8px 0 #666666;
+}
+.main-image img {
+display: block;
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+}
 html {
   font-family: 'Roboto', sans-serif;
   color: #666666;
@@ -143,11 +222,23 @@ padding-top: 66.66%;
 .is-16by9{
 padding-top: 56.25%;	
 }
+.no-padding{
+padding: 0;
+
+}
 .btn {
 background-color: #a0c060;
 font-weight: 900;
 font-size: .8rem;
+display: inline-block;
+border: solid 2px #a0c040;
+border-radius: 5px;
+cursor: pointer;
+padding: 5px;
+
+
 }
 .btn:hover{
-border-bottom: solid 3px #afafaf;
+background-color: #f0f0f0;
+border: solid 2px #a0c040;
 }

@@ -3,26 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="./temp/styles/styles.css">
+ <!-- build:css assets/styles/styles.css-->
+   <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+   <!--endbuild-->
+   <!-- build:js assets/scripts/Vendor.js-->
+   <script src="/temp/scripts/Vendor.js"></script>
+   <!--endbuild-->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <title>The Flexbox Experiment</title>
 </head>
 <body>
 <div class="columns">
-	<div class="column">
-	<div class="article">
-	<div class="article-body">
-	
+	<div class="main-image"><img src="http://starity.hu/images/articles/embed/2016/02/01/12650929-1116141321753841-9211244740828733242-n-1454320199.jpg" alt="Válótársak"></div>
+</div>
+<div class="columns">
+	<div class="header">
 	<ul>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
+		<li>About
+			<ul>
+				<li>The Author</li>
+				<li>The Visitor</li>
+			</ul>
+		</li>
+		<li>Documentation</li>
+		<li>Development</li>
+		<li>Contributors
+			<ul>
+				<li>The crew <span>21 comm.</span>	</li>
+				<li>The FB <span>12 comm.</span></li>
+				<li>Twitters <span>1 comm.</span></li>
+				<li>The YT team <span>7 comm.</span></li>
+				<li>Immigrants <span>20 comm.</span></li>
+			</ul>
+		</li>
+		<li>Contacts</li>
 	</ul>
-
-	</div>
-	</div>
 	</div>
 </div>
 <div class="columns">
@@ -30,7 +45,8 @@
 		<div class="article">
 		<div class="article-image is-16by9"><img src="http://vs.hu/i/stohl2-ep01-jpg.exact679x382.jpg" alt="Buci"></div>
 		<div class="article-body">
-		<div class="article-header">Heading One</div>		
+		<div class="article-header">Heading One
+		</div>		
 		<div class="article-text">A Lorem Ipsum alaprészlete, amit az 1500-as évek óta használtak, az érdeklõdõk kedvéért lent újra megtekinthetõ. Az 1.10.32 és 1.10.33-as bekezdéseket szintén eredeti formájukban reprodukálták a hozzá tartozó angol változattal az 1914-es fordításból H. Rackhamtól.</div>		
 		<div class="article-footer">
 		<div>by Joe doe</div>
@@ -97,9 +113,10 @@
 
 		<div class="article">
 		<div class="article-body">
-		<div class="article-footer">
-		<div class="btn">4:3 ratio</div>
-		<div class="btn">16:9 ratio</div>		
+		<div class="article-footer no-padding">
+		<div class="btn" id="is-4by3">4:3 ratio</div>
+		<div class="btn">16:9 ratio</div>
+		<div class="btn">Ratio reset</div>		
 		</div>	
 		</div>	
 		</div>
@@ -163,5 +180,8 @@
 	</div>
 	</div>
 </div>
+<!-- build:js assets/scripts/App.js-->
+<script src="/temp/scripts/App.js"></script>
+<!--endbuild-->
 </body>
 </html>

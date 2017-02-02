@@ -63,3 +63,8 @@ padding-top: 66.66%;
 .is-16by9{
 padding-top: 56.25%;	
 }
+
+.no-padding{
+padding: 0;
+
+}

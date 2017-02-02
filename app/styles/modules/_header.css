@@ -1,4 +1,90 @@
+.header{
+padding: 0;
+margin: 0;
+border-bottom: solid 1px $mainBG3;
+box-sizing: border-box;
+width: 100%;
+}
 
-/*font-family: 'Exo 2', sans-serif;
-font-family: 'Oswald', sans-serif;*/
+
+.header ul{
+float: right;
+list-style-type: none;
+padding: 0;
+margin: 0;
+font-size: 0;
+}
+
+.header ul li {
+width: auto;
+font-size: 1rem;
+display: inline-block;
+position: relative;
+padding: 5px 15px;
+
+		&:hover{
+		background-color: $mainBG2;
+		color: $mainBG5;
+		cursor: pointer;
+		transition: background-color 0.2s ease-out;
+		}
+		& ul {
+		display: none;
+		}
+		&:hover ul {
+		display: block;
+		position: absolute;
+		top: 1.8rem;
+		left: 0rem;
+		z-index: 1;
+		font-size: .75rem;
+		}
+
+		&:hover ul li{
+		width: 210px;
+		display: block;
+		position: relative;
+		padding: 5px 3px 5px 10px;
+		margin: 5px 0;
+		background-color: $mainBG3;
+		border-radius: 5px;
+		}
+
+		& ul li:hover{
+		background-color: $mainBG5;
+		color: $mainBG2;
+		border-radius: 5px;
+		transform: scaleX(1.02);
+
+		}
+
+		& ul li span{
+		float: right;
+		font-size: .8rem;
+		font-weight: 200;
+		margin-top: 0;
+		padding: 0 5px;
+		background-color: $mainBG3;
+		border: solid 2px $mainBG3;
+		border-radius: 5px;
+		}
+}
+
+.main-image {
+background: #eee;
+display: block;
+padding-top: 33%;
+position: relative;
+width: 100%;
+box-shadow: 0 4px 8px 0 $footerBG; 
+
+& img {
+	  display: block;
+	  height: 100%;
+	  left: 0;
+	  position: absolute;
+	  top: 0;
+	  width: 100%;
+	}
+}
 
