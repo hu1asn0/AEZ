@@ -1,7 +1,7 @@
 module.exports = {
 entry: {
-	App: "./app/assets/scripts/app.js",
-	Vendor: "./app/assets/scripts/Vendor.js"
+	App: "./app/scripts/app.js",
+	Vendor: "./app/scripts/Vendor.js"
 },
 //entry: "./app/temp/waypoints.js",
 output: {
