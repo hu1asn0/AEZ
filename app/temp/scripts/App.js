@@ -11251,8 +11251,10 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _jquery = __webpack_require__(1);
 
@@ -11262,17 +11264,52 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var Ratio = function Ratio() {
+	var Ratio = function () {
+	  function Ratio() {
 	    _classCallCheck(this, Ratio);
 
-	    (0, _jquery2.default)(document).ready(function () {
-	        (0, _jquery2.default)("#target-pic").click(function () {
-	            (0, _jquery2.default)("#aim-pic").toggleClass("is-16by9");
-	            (0, _jquery2.default)("#aim-pic").toggleClass("is-4by3");
-	            console.log("Done with proportion!");
-	        });
-	    });
-	};
+	    this.var1 = (0, _jquery2.default)(".is-4by3");
+	    this.var2 = (0, _jquery2.default)(".is-16by9");
+	    this.btn1 = (0, _jquery2.default)("#btn_43");
+	    this.btn2 = (0, _jquery2.default)("#btn_169");
+	    this.btn3 = (0, _jquery2.default)("#btn_reset");
+	    this.events();
+	  }
+
+	  _createClass(Ratio, [{
+	    key: "events",
+	    value: function events() {
+	      this.btn1.click(this.fun43.bind(this));
+	      this.btn2.click(this.fun169.bind(this));
+	      this.btn3.click(this.fun_reset.bind(this));
+	    }
+	  }, {
+	    key: "fun43",
+	    value: function fun43() {
+	      this.var2.removeClass("is-16by9");
+	      this.var2.addClass("is-4by3");
+	      /*console.log(this.var1); 						  */
+	    }
+	  }, {
+	    key: "fun169",
+	    value: function fun169() {
+	      this.var1.removeClass("is-4by3");
+	      this.var1.addClass("is-16by9");
+	      /*console.log(this.var2);*/
+	    }
+	  }, {
+	    key: "fun_reset",
+	    value: function fun_reset() {
+	      this.var1.removeClass("is-16by9");
+	      this.var1.addClass("is-4by3");
+	      this.var2.removeClass("is-4by3");
+	      this.var2.addClass("is-16by9");
+	      /*console.log("Reset done!");*/
+	    }
+	  }]);
+
+	  return Ratio;
+	}();
 
 	exports.default = Ratio;
 
