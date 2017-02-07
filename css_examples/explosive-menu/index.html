@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Explosive Menu</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+  background: #ececec;
+  overflow: hidden;
+  user-select: none;
+}
+
+#Button {
+  position: absolute; top: 15px; left: 15px;
+  width: 60px; height: 60px;
+  font-size: 18px; 
+  text-align: center; 
+  line-height: 60px; 
+  background: #e74c3c;
+  color: #ececec;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.Nav {
+  position: absolute; 
+  margin: auto; 
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 302px; height: 302px;
+  font-size: 0;
+  transform: scale(0);
+  transition: transform 0.8s;
+  box-shadow: 0px 0px 10px #999;
+  z-index: 1;
+}
+
+a {
+  display: inline-block;
+  width: 150px; height: 150px;
+  font-size: 28px; 
+  text-decoration: none; 
+  line-height: 150px; 
+  text-align: center;
+  text-shadow: 2px 2px 4px #666; 
+  color: #fff;
+}
+
+a:nth-of-type(odd) { margin-right: 2px; }
+a:nth-child(1) { margin-bottom: 2px; background: #1abc9c; }
+a:nth-child(2) { background: #2ecc71; }
+a:nth-child(3) { background: #3498db; }
+a:nth-child(4) { background: #9b59b6; }
+
+.active {
+  transform: scale(1);
+}
+
+canvas { position: absolute; }
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <div id="Button" class="fontawesome-fire"></div>
+
+<div class="Nav">
+  <a href="#"><span class="fontawesome-home"></span></a>
+  <a href="#"><span class="fontawesome-user"></span></a>
+  <a href="#"><span class="fontawesome-upload"></span></a>
+  <a href="#"><span class="fontawesome-wrench"></span></a>
+</div>
+
+<canvas></canvas>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

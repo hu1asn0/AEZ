@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: block;
+  background-color: lightgreen
+
+}
+
+h2{
+  display: block;
+  background-color: lightgreen;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.main-nav{
+width: 25%;
+background-color: #E6EAED;
+color: #4E4F54;
+margin: 0 auto;
+}
+
+.sub-nav{
+background-color: pink;
+color: #4E4F54;
+margin: 0 auto;
+cursor: pointer;
+}
+
+.sub-nav2{
+background-color: red;
+cursor: pointer;
+display: none;
+}
+
+.shown{
+  display: block;
+}
+.hidden{
+  display: none;
+}
